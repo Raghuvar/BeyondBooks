@@ -1,2 +1,1 @@
-# Project under construction 
-@programLibrarian please add something here
+# Platform for the Book Exchanging and Reviewing based on the Peer review
