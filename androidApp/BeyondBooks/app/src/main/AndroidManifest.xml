@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="in.ac.iiitv.beyondbooks" >
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,6 +20,43 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".Wireframe7" >
+        </activity>
+        <activity android:name=".Wireframe12" >
+        </activity>
+        <activity android:name=".Wireframe13" >
+        </activity>
+        <activity android:name=".Wireframe20" />
+        <activity android:name=".AddBook" />
+        <activity android:name=".SellBook" />
+        <activity android:name=".Frame5" />
+        <activity android:name=".Frame10" >
+        </activity>
+        <activity android:name=".Frame11" >
+        </activity>
+        <activity android:name=".frame9" >
+        </activity>
+        <activity android:name=".Frame15" >
+        </activity>
+        <activity android:name=".Frame16" >
+        </activity>
+        <activity android:name=".Frame17" >
+        </activity>
+        <activity android:name=".Frame14"
+            android:windowSoftInputMode="adjustPan">
+
+        </activity>
+        <activity android:name=".BookViewPage" >
+        </activity>
+        <activity android:name=".Wireframe21" >
+        </activity>
+        <activity android:name=".Wireframe8" >
+        </activity>
+        <activity android:name=".AboutUs">
+
+        </activity>
+        <activity android:name=".Search" >
         </activity>
     </application>
 

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="in.ac.iiitv.beyondbooks.Frame6"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:id="@+id/book_image"
+                    android:layout_weight="1"/>
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:id="@+id/book_rating"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="About the book:"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/book_description"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Add to my bookshelf"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@android:color/darker_gray"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reviews and Ratings"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/text"
+                    android:layout_weight="1"/>
+                 <Button
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentRight="true"
+                     android:text="give review"
+                     android:onClick="give_review"
+                     android:id="@+id/give_review" />
+            </LinearLayout>
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/ratingBarStyleIndicator"
+                android:id="@+id/rating"
+                android:layout_below="@+id/text"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/frame7_rating"
+                android:id="@+id/ratings">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="General"
+                    android:clickable="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#0000EE"
+                    android:onClick="get_general_rating"
+                    android:id="@+id/general_rating"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Students"
+                    android:clickable="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#0000EE"
+                    android:id="@+id/student_rating"
+                    android:onClick="get_student_rating"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Faculty"
+                    android:clickable="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#0000EE"
+                    android:id="@+id/faculty_rating"
+                    android:onClick="get_faculty_rating"/>
+            </LinearLayout>
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="comments"
+                   android:textAppearance="?android:attr/textAppearanceMedium"
+                   android:textStyle="bold"
+                   />
+
+               <ListView
+                   android:layout_width="match_parent"
+                   android:layout_height="200dp"
+                   android:id="@+id/comments"
+                   android:layout_weight="1">
+               </ListView>
+
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textStyle="bold"
+                   android:textAppearance="?android:attr/textAppearanceMedium"
+                   android:text="Sellers available" />
+
+               <ListView
+                   android:layout_width="match_parent"
+                   android:layout_height="200dp"
+                   android:id="@+id/sellers"
+                   android:layout_weight="1"></ListView>
+
+
+
+           </LinearLayout>
+
+</LinearLayout>
